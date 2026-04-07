@@ -13,15 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DemoController {
 
     private Coach myCoach;
-    private Coach anotherCoach;
 
-    // notice that the class name CricketCoach start with the lowercase
+    // by default the coach object is shared, or is a singleton
     @Autowired
-    public void setCoach(@Qualifier("trackCoach") Coach theCoach,
-            @Qualifier("trackCoach") Coach anotherCoach) {
-                
+    public void setCoach(@Qualifier("trackCoach") Coach theCoach) {
         this.myCoach = theCoach;
-        this.anotherCoach = anotherCoach;
     }
 
     @GetMapping("/dailyworkout")
