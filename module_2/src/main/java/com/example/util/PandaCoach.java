@@ -1,8 +1,6 @@
-package com.example.demo_2.util;
+package com.example.util;
 
 import org.springframework.stereotype.Component;
-
-import com.example.util.Coach;
 
 @Component
 public class PandaCoach implements Coach {
