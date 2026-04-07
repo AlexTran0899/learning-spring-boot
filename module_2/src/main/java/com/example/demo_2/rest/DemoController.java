@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class DemoController {
     
-    // define the private field for the dependency
+    @Autowired
     private Coach myCoach;
 
     @GetMapping("/dailyworkout")
