@@ -15,10 +15,6 @@ public class DemoController {
     // define the private field for the dependency
     private Coach myCoach;
     // define the constructure for dependency injection
-    @Autowired
-    public DemoController(Coach theCoach){
-        myCoach = theCoach;
-    }
 
     @GetMapping("/dailyworkout")
     public String getMethodName() {
