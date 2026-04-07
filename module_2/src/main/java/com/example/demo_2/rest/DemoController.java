@@ -17,7 +17,7 @@ public class DemoController {
 
     // notice that the class name CricketCoach start with the lowercase
     @Autowired
-    public void setCoach(Coach theCoach) {
+    public void setCoach(@Qualifier("trackCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
