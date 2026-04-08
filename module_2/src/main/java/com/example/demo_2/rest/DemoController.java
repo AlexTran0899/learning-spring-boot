@@ -16,7 +16,7 @@ public class DemoController {
 
     // by default the coach object is shared, or is a singleton
     @Autowired
-    public void setCoach(@Qualifier("trackCoach") Coach theCoach) {
+    public void setCoach(@Qualifier("aquatic") Coach theCoach) {
         this.myCoach = theCoach;
     }
 
